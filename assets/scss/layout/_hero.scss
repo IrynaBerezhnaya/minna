@@ -1,0 +1,36 @@
+.home {
+	header {
+		.entry-title {
+			display: none;
+		}
+	}
+
+	.storefront-hero__button-edit {
+		display: none;
+	}
+}
+
+.hero-home {
+	&__wrap {
+		height: 100vh;
+		background-attachment: inherit;
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: relative;
+		z-index: 0;
+	}
+
+	&__bg {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background-size: cover;
+		background-position: center;
+	}
+}
+
+.page-template-template-homepage .type-page {
+	padding-top: 0;
+}

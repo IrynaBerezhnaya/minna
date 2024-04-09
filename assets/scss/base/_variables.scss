@@ -1,0 +1,63 @@
+/* stylelint-disable */
+
+//Responsive
+$bp-MS: 375px;
+$bp-S: 480px;
+$bp-SM: 550px;
+$bp-M: 768px;
+$bp-ML: 834px;
+$bp-L: 992px;
+$bp-XL: 1200px;
+$bp-2XL: 1366px;
+$bp-3XL: 1440px;
+$bp-4XL: 1600px;
+$bp-5XL: 1920px;
+$bp-6XL: 2200px;
+
+//Colors
+$color-1: #004534;
+$color-2: #fff;
+$color-3: rgba(0, 0, 0, 0.3);
+$color-4: #fff7eb;
+
+$color-5: #d42b3b;
+$color-6: #d9d9d9;
+$color-7: #0f834d;
+$color-8: #000;
+$color-9: #b3bcf3;
+$color-10: #ff671d;
+$color-10-1: #ff7937;
+$color-11: #262730;
+$color-12: rgba(217, 217, 217, 0.19);
+$color-13: #37296c;
+$color-14: rgba(0, 0, 0, 0.1);
+$color-15: #1e114a;
+$color-16: rgba(42, 26, 94, 0.40);
+$color-17: rgba(0, 0, 0, 0.05);
+$color-18: rgba(50, 53, 73, 0.70);
+$color-19: #efefef;
+$color-20: #f6f6f6;
+$color-21: rgba(0, 0, 0, 0.25);
+$color-22: rgba(255, 255, 255, 0.50);
+$color-23: rgba(38, 39, 48, 0.60);
+$color-24: rgba(38, 39, 48, 0.40);
+$color-25: #f5f5f5;
+
+//Font Size
+$font-size: 16;
+
+//Fonts
+$font-base: 'OpenSans-Regular', sans-serif;
+$font-light: 'OpenSans-Light', sans-serif;
+$font-bold: 'OpenSans-Bold', sans-serif;
+$font-dela-gothic: 'DelaGothicOne-Regular', sans-serif;
+
+//Transition
+$transition-linear: all 0.3s linear;
+$transition-ease: all 0.3s ease-in-out;
+$transition-fast: all 0.2s ease;
+
+//Animation
+$animation-duration: 800ms;
+$gradient-desktop: linear-gradient(to right, $color-1 0%, rgba(0, 0, 0, 0.5) 45%, rgba(0, 0, 0, 0.5) 55%, $color-1 100%);
+$gradient-mobile: linear-gradient(to right, $color-1 0%, rgba(0, 0, 0, 0) 45%, rgba(0, 0, 0, 0) 55%, $color-1 100%), linear-gradient(to top, $color-1 0%, rgba(0, 0, 0, 0) 100%);

@@ -1,0 +1,41 @@
+.site {
+    position: relative;
+
+    .storefront-primary-navigation {
+        text-align: right;
+
+        ul.menu li a {
+            font-family: $font-dela-gothic;
+            color: $color-1;
+            font-size: 18px;
+            transition: $transition-ease;
+
+            &:hover {
+                opacity: .7;
+                transform: translateY(-3px);
+                box-shadow: 0 4px 8px $color-3;
+            }
+        }
+    }
+
+    .col-full {
+        margin-left: inherit;
+    }
+}
+
+.site-header {
+    display: flex;
+    background-color: transparent;
+    border-bottom-color: unset;
+    color: transparent;
+    padding: 0 56px 0;
+    position: absolute;
+    top: 18px;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+
+    .col-full {
+        max-width: 100%;
+    }
+}

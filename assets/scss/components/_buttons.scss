@@ -1,0 +1,118 @@
+@mixin button-primary($fs) {
+	padding: 15px 20px;
+	text-align: center;
+	display: block;
+	color: $color-2;
+	background-color: $color-10;
+	width: 100%;
+	max-width: 280px;
+	height: 62px;
+	font-family: $font-bold;
+	font-weight: 700;
+	cursor: pointer;
+	font-size: $fs - 2;
+	line-height: 1;
+	border: none;
+	border-radius: 24px;
+	transition: $transition-ease;
+	text-decoration: none;
+	appearance: none;
+	text-transform: uppercase;
+
+	@include media-up($bp-M) {
+		font-size: $fs;
+	}
+
+	&:hover,
+	&:active,
+	&:focus,
+	&.active {
+		background-color: $color-10-1;
+		outline: none;
+	}
+
+	&.center {
+		margin: 0 auto;
+	}
+}
+
+@mixin button-secondary($fs) {
+	color: $color-1;
+	background-color: transparent;
+	border: 1px solid $color-1;
+	height: 52px;
+
+	&:hover,
+	&:active,
+	&:focus,
+	&.active {
+		color: $color-2;
+		background-color: $color-1;
+	}
+}
+
+@mixin button-dark-blue($fs) {
+	color: $color-2;
+	background-color: $color-1;
+	border: 1px solid $color-1;
+	height: 49px;
+	line-height: 1;
+	max-width: 218px;
+
+	@include media-up($bp-M) {
+		line-height: 2;
+		height: 62px;
+	}
+
+	@include media-up($bp-L) {
+		max-width: 280px;
+	}
+
+	&:hover,
+	&:active,
+	&:focus {
+		color: $color-1;
+		background-color: $color-2;
+		border: 1px solid $color-1;
+	}
+}
+
+.button,
+.button.alt,
+.btn,
+.btn-primary {
+	@include button-primary(16px);
+}
+
+.btn-secondary {
+	@include button-secondary(14px);
+}
+
+.btn-dark-blue {
+	@include button-dark-blue(14px);
+}
+
+.wp-block-button {
+	a.wp-block-button__link {
+		transition: opacity 0.3s ease-in-out;
+
+		&:hover,
+		&:focus {
+			text-decoration: none;
+			opacity: 0.8;
+		}
+	}
+}
+
+.qty-button {
+	width: 24px;
+	height: 24px;
+	display: inline-flex;
+	line-height: 24px;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #d9d9d9;
+	border-radius: 50%;
+	cursor: pointer;
+	user-select: none;
+}
